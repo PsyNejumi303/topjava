@@ -19,7 +19,7 @@ public class ExceptionUtil {
         return object;
     }
 
-    public static void check(boolean found, String msg) {
+    private static void check(boolean found, String msg) {
         if (!found) throw new NotFoundException("Not found entity with " + msg);
     }
 }
